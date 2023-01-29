@@ -1,0 +1,92 @@
+header{
+
+  height: 50px;
+  padding: 0px 40px;
+}
+
+header img{
+  height: 100%;
+}
+
+body {
+  background-color: rgb(243, 238, 178);
+  font-family: 'Montserrat', sans-serif;
+}
+
+main{
+  display: flex;
+
+}
+
+#principal{
+  width: 70%;
+  height: 80vh;
+  padding: 20px 40px;
+  position: relative;
+}
+
+#principal textarea{
+  width: 100%;
+  height: 80%;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(249, 245, 218);
+  border-radius: 15px;
+}
+
+.botones{
+  position: absolute;
+  bottom: 15px;
+  
+}
+
+button{
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #d6ae5f;
+  border: 1px solid #d6ae5f;
+  color: white;
+  font-size: 20px;
+}
+
+#derecho{
+  width: 30%;
+  height: 80vh;
+  padding: 20px;
+
+}
+
+#secundario{
+  background-color: rgb(249, 245, 218);
+  border-radius: 15px;
+  height: 100%;
+  padding: 20px;
+ 
+}
+
+@media screen and (max-width:480px){
+  #principal{
+    width: 100%;
+    padding: 20px 20px;
+    height: 80vh;
+  }
+
+  #derecho {
+    width: 100%;
+    height: 70px;
+  }
+
+  main{
+    display: block;
+  }
+
+  button {
+    width:45%;
+  }
+
+  .botones {
+    width:100%;
+  }
+
+  
+}
