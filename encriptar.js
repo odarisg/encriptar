@@ -23,7 +23,8 @@ function encriptar(){
     }
   }
 
-  document.getElementById("secundario").innerHTML = encriptada;
+  document.getElementById("resultado").innerHTML = encriptada;
+  document.querySelector(".copiar").style.display = "block";
   document.getElementById("texto").value="";
 
 }
@@ -38,6 +39,20 @@ function desencriptar(){
   encriptada= encriptada.replace(/ufat/g,"u");
 
   original=encriptada;
-  document.getElementById("secundario").innerHTML = encriptada;
+  document.getElementById("resultado").innerHTML = encriptada;
+  document.querySelector(".copiar").style.display = "block";
   document.getElementById("texto").value="";
 }
+
+function copy() {
+
+  let newClip = document.getElementById("resultado").innerHTML
+
+  navigator.clipboard.writeText(newClip).then(() => {
+    /* clipboard successfully set */
+  }, () => {
+    /* clipboard write failed */
+  });  
+
+}
+
